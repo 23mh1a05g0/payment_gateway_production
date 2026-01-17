@@ -13,12 +13,12 @@ const createPublicPayment = async (req, res) => {
         },
       });
     }
-
+    //
     const orderRes = await db.query(
       `SELECT id, merchant_id FROM orders WHERE id = $1`,
       [order_id]
     );
-
+    //
     if (orderRes.rows.length === 0) {
       return res.status(404).json({
         error: {
