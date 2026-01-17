@@ -17,7 +17,7 @@ async function getPublicOrder(req, res) {
         },
       });
     }
-
+//
     res.json(result.rows[0]);
   } catch (err) {
     console.error(err);
