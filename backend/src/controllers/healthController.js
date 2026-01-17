@@ -3,6 +3,8 @@ const db = require("../config/db");
 const healthCheck = async (req, res) => {
   let dbStatus = "connected";
 
+  //
+
   try {
     await db.query("SELECT 1");
   } catch (err) {
