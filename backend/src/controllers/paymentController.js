@@ -7,7 +7,7 @@ const createPayment = async (req, res) => {
       req.merchant.id,
       req.body
     );
-
+//
     return res.status(201).json({
       id: payment.id,
       order_id: payment.order_id,
