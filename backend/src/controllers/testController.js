@@ -10,7 +10,7 @@ const getTestMerchant = async (req, res) => {
       `,
       ["test@example.com"]
     );
-
+    //
     if (result.rows.length === 0) {
       return res.status(404).json({
         error: {
